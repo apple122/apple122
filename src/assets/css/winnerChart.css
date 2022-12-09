@@ -1,0 +1,51 @@
+@media (max-width: 570px) {
+    .FirstPrize {
+        height: 570px;
+        width: 300px;
+    }
+
+    .SecondPrize {
+        height: 570px;
+        padding-bottom: 50px;
+        width: 300px;
+    }
+
+    .ThirdPrize {
+        height: 570px;
+        width: 300px;
+    }
+
+
+}
+
+@media (min-width: 570px) {
+    .FirstPrize {
+        height: 665px;
+        width: 350px;
+    }
+
+    .SecondPrize {
+        height: 615px;
+        width: 350px;
+    }
+
+    .ThirdPrize {
+        height: 570px;
+        width: 350px;
+    }
+
+  
+}
+
+@media (max-width: 1125px){
+    .SecondPrize-pd {
+        padding-bottom: 50px;
+        transform: all 0.5s;
+    }
+    .FirstPrize-pd {
+        transform: all 0.5s;
+    }
+    .ThirdPrize-pd {
+        transform: all 0.5s;
+    }
+}

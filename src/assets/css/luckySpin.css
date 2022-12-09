@@ -1,0 +1,261 @@
+.backgroundText1 {
+    background-color: #1576EC;
+    width: 380px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 40px;
+    color: white;
+}
+
+.backgroundText2 {
+    background-color: #1576EC;
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    color: white;
+}
+
+.disable {
+    display: none;
+}
+
+.formRandom, .spin, .itemNumber {
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 375px) {
+    .backgroundText1 {
+        width: 300px;
+    }
+
+    .luckybox {
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .backgroundText2 {
+        width: 300px;
+    }
+}
+
+.formRandom {
+    overflow: hidden;
+    max-width: 400px;
+    height: 600px;
+    position: relative;
+    justify-content: center;
+}
+
+.circle {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    line-height: 80px;
+    position: absolute;
+    vertical-align: middle;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.loadingCircle {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    line-height: 80px;
+    position: absolute;
+    vertical-align: middle;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.coolDown {
+    height: 80px;
+    width: 80px;
+    background-color: gray;
+    border-radius: 100%;
+    border: none;
+    text-align: center;
+    font-size: 23px;
+    position: absolute;
+    line-height: 80px;
+    vertical-align: middle;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 1000;
+}
+
+.circle:hover {
+    background-color: rgb(34, 255, 0);
+    color: white;
+}
+
+.spinning {
+    visibility: hidden;
+}
+
+.arrow-right {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 40px solid white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.itemNumber {
+    width: 390px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.arrow-left {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 40px solid white;
+    position: absolute;
+    left: 0;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.itemNumber:nth-child(1n) {
+    background-color: #F24C4C;
+}
+
+.itemNumber:nth-child(2n) {
+    background-color: #EC9B3B;
+}
+
+.itemNumber:nth-child(3n) {
+    background-color: #FBCB0A;
+}
+
+.itemNumber:nth-child(4n) {
+    background-color: #6BCB77E5;
+}
+
+.itemNumber:nth-child(5n) {
+    background-color: #4D96FF;
+}
+
+.itemNumber:nth-child(6n) {
+    background-color: #1576EC;
+}
+
+.itemNumber:nth-child(7n) {
+    background-color: #7A39CEE5;
+}
+
+.itemNumber:nth-child(8n) {
+    background-color: #D840BFE5;
+}
+
+.itemRandom:hover {
+    background-color: rgb(52, 244, 52) !important;
+    cursor: pointer;
+}
+
+.blur {
+    animation: blur 4;
+}
+
+@keyframes blur {
+    from {
+        filter: blur(0rem);
+    }
+
+    to {
+        filter: blur(0.2rem);
+    }
+}
+
+.bd {
+    border: 5px solid #FFAC41;
+}
+
+.bgPrize {
+    background-color: #00A3FF;
+    color: white;
+    border-radius: 15px;
+}
+
+.warningAnimation {
+    animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        color: rgb(255, 0, 0);
+    }
+    25% {
+        color: #ff0000b7;
+    }
+    50% {
+        color: #ff00009f;
+    }
+    75% {
+        color: #ff0000;
+    }
+    100% {
+        color: #ff0000;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .formRandom {
+        width: 300px;
+    }
+
+    .itemNumber {
+        width: 290px;
+    }
+}

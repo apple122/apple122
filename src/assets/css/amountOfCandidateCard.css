@@ -1,0 +1,26 @@
+.ps-fixed{
+    position: fixed;
+    /* padding: 2%; */
+    z-index: 4;
+    right: 2%;
+  }
+  .group-Cart{
+    position: relative;
+    width: 100%;
+    z-index: 5;
+    background-color: white;
+  }
+  .group-position-SHow{
+    margin-top: 6%;
+    width: 250px;
+    height: 200px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 15px 3px rgba(8, 8, 8, 0.1);
+    background-color: aliceblue;
+  }
+  .group-card-show{
+    /* padding: 10%; */
+    font-size: 45px;
+    position: relative;
+    /* padding: 2%; */
+  }
